@@ -1,0 +1,31 @@
+<div id="dialog-container">
+    <div id="dialog">
+      <div id="start_conditions_scroll">
+        <div class="comp" >
+          <div class="center_div_outer">
+          <video class='videoTag' id="background-video" autoPlay loop muted>
+              <source src="https://thumbs.gfycat.com/TartThisIbis-mobile.mp4" type='video/mp4' />
+          </video>
+
+            <div class="center_div_inner1">
+              <div>
+                <h1>Get Your Money Working For You</h1>
+                <p>Start Our 7 Days Free Trial Now</p>
+              </div>
+              <div class="inner_input_div">
+                <form autoComplete='off' onsubmit="return submitForm(e);" >
+                <input name="full_name" id="full_name" onchange="getName(this.value)" type="text" placeholder="Full Name" required />
+                <input name="email" id="email" onchange="getEmail(this.value)" type="email" placeholder="Email Address" required />
+                <input name="phone_number" id="phone_number" onchange="getPhone(this.value)" type="text" placeholder="Phone Number" required/>
+                <button class="home_page_form_button" id="button_click_to_invest" type="submit">Click to invest your Future</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="close-btn" onClick={dialog}>&times;</div>
+        </div>
+
+      <!-- {/* <button id="close" class="button" onclick="dialog()">Close</button> */} -->
+      </div>
+    </div>
+  </div>
